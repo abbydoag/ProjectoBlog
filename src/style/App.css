@@ -21,6 +21,17 @@
 .paragraph{
     text-align: center;
 }
+th, td {
+    border: 1px;
+    padding: 4px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #e4cdcd;
+    font-weight: bold;
+    text-align: center;
+  }
 .Media{
     display: flex;
     justify-content: center;
@@ -34,6 +45,15 @@
 .header{
     display: flex;
     justify-content:space-evenly;
+}
+.TableTitles{
+    text-align: center;
+}
+.tabla{
+   
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 20px auto;
 }
 .loading{
     text-align: center;
