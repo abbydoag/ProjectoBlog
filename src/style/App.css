@@ -1,0 +1,52 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+.navbar-brand.img-fluid {
+    width: 90px; 
+    height: 90px; 
+    padding: 3px;
+  }
+.navBar{
+    background-color: rgb(133, 133, 133);
+    overflow: hidden;
+}
+.nav-link {
+    color:azure;
+}
+.Title1{
+    text-align: center;
+}
+.subtitle{
+    text-align: center;
+}
+.paragraph{
+    text-align: center;
+}
+.Media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.gif{
+    width: 160px;
+    height: 100px;
+}
+.header{
+    display: flex;
+    justify-content:space-evenly;
+}
+.loading{
+    text-align: center;
+    font-size: medium;
+}
+
+body {
+    background-color:brown; 
+    font-family: Arial, sans-serif;
+    display: grid;
+    height: 50vh;
+}
+.audio{
+    position: absolute;
+    left: 20px
+}
