@@ -1,10 +1,13 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import "@fortawesome/fontawesome-free/css/all.min.css";
 .navbar-brand.img-fluid {
-    width: 90px; 
-    height: 90px; 
-    padding: 3px;
-  }
+    width: 60px; 
+    height: 60px; 
+    padding: 4px;
+}
+.navbar-toggler{
+    background-color: aliceblue;
+}
 .navBar{
     background-color: rgb(133, 133, 133);
     overflow: hidden;
@@ -21,22 +24,17 @@
 .paragraph{
     text-align: center;
 }
-th, td {
-    border: 1px;
-    padding: 4px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #e4cdcd;
-    font-weight: bold;
-    text-align: center;
-  }
+
 .Media{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 25px;
+}
+.loading{
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
 }
 .gif{
     width: 160px;
@@ -46,18 +44,28 @@ th, td {
     display: flex;
     justify-content:space-evenly;
 }
+.post-card {
+    margin-bottom: 20px;
+    padding: 12px;
+    background-color: lightgray;
+    border-radius: 10px;
+}
+.post-title{
+    text-align: center;
+    font-size: 24px;
+    font-weight:bold;
+}
 .TableTitles{
     text-align: center;
 }
-.tabla{
-   
-    width: 100%; 
-    border-collapse: collapse; 
-    margin: 20px auto;
+.post-title{
+    margin-top: 20px;
 }
+
 .loading{
     text-align: center;
     font-size: medium;
+    margin-top: auto;
 }
 
 body {
@@ -65,8 +73,4 @@ body {
     font-family: Arial, sans-serif;
     display: grid;
     height: 50vh;
-}
-.audio{
-    position: absolute;
-    left: 20px
 }

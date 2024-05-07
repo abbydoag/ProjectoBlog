@@ -47,40 +47,45 @@ function Dashboard() {
         )}
         {!isLoading && !error && posts.length > 0 &&(
           <section className="post-list">
-            <table className="tabla">
-              <thead>
-                <tr className="TableTitles">
-                  <th></th>
-                  <th>Contenido</th>
-                  <th>Episodio</th>
-                  <th>Pelea</th>
-                  <th>Soundtrack</th>
-                  <th>Video</th>
-                </tr>
-              </thead>
-              <tbody>
-                {posts.map((post) => (
-                  <tr key={post.id}>
-                    <th>{post.title}</th>
-                    <td>{post.content}</td>
-                    <td>{post.episode}</td>
-                    <td>{post.nameFight}</td>
-                    <td>{post.nameSoundtrack}</td>
-                    <td>
-                    <iframe
-                      width="560"
-                      height="315"
-                      src={post.fightVideo}
-                      frameborder="0"
-                      title={post.title}
-                    >
-                    Your browser does not support iframes.
-                    </iframe>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+            <ul className="card-container">
+              {posts.map((post) => (
+                <ul key={post.id} className="post-card">
+                  <article>
+                    <h3 className="post-title">{post.title}</h3>
+                    <p className="post-excerpt">{post.content}</p>
+                    <div className="post-details">
+                      {post.episode && (
+                        <p>
+                          <b>Episode: </b> {post.episode}
+                        </p>
+                      )}
+                      {post.nameFight && (
+                        <p>
+                          <b>Fight: </b> {post.nameFight}
+                        </p>
+                      )}
+                      {post.nameSoundtrack && (
+                        <p>
+                          <b>Soundtrack: </b> {post.nameSoundtrack}
+                        </p>
+                      )}
+                      {post.fightVideo && (
+                      <div className="post-video">
+                        <iframe
+                          width="500"
+                          height="280"
+                          src={post.fightVideo}
+                          frameborder="0"
+                          allow=" gyroscope"
+                          title={post.title}
+                        ></iframe>
+                      </div>
+                    )}
+                    </div>
+                  </article>
+                </ul>
+              ))}
+            </ul>
           </section>
         )}
       </div>
