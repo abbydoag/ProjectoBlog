@@ -33,7 +33,7 @@ function Dashboard() {
     <div className="dashboard">
       <h1 className="Title1">Posts</h1>
       <div className="header">
-        <img className="gif" src="src/assets/RWBYGif1.gif" alt="Ruby" />
+        <img className="gif" src="src/assets/RWBYGif.gif" alt="Ruby" />
         <img className="gif" src="src/assets/RWBYGif2.gif" alt="Weiss" />
         <img className="gif" src="src/assets/RWBYGif3.gif" alt="Blake" />
         <img className="gif" src="src/assets/RWBYGif4.gif" alt="Yang" />
