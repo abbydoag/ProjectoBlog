@@ -26,7 +26,11 @@ function Dashboard() {
       });
   
       if (response.ok) {
-        await fetch("http://127.0.0.1:8001/all-posts");
+        const updatePage = await fetch("http://127.0.0.1:8001/all-posts")
+        if(updatePage.ok){
+          const updatePosts = await updatePage.json()
+          setPosts(updatePosts)
+        }
       } else {
         throw new Error(`Error: ${response.statusText}`);
       }
