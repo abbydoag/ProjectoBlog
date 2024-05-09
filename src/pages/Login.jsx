@@ -31,13 +31,13 @@ function Login() {
                 label="Usuario"
                 type="text"
                 value={username}
-                onChange={(value) => setUsername(value)}
+                onChange={(e) => setUsername(e.target.value)}
             />
             <Input
                 label="Contraseña"
                 type="password"
                 value={password}
-                onChange={(value) => setPassword(value)}
+                onChange={(e) => setPassword(e.target.value)}
             />
             <Button text="Ingresar" color="primary" onClick={processLogin} />
         </div>

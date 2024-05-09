@@ -8,6 +8,9 @@
 .navbar-toggler{
     background-color: aliceblue;
 }
+.nav-toggler{
+    align-content: end;
+}
 .navBar{
     background-color: rgb(133, 133, 133);
     overflow: hidden;
@@ -24,7 +27,9 @@
 .paragraph{
     text-align: center;
 }
-
+b{
+    justify-content:right;
+}
 .Media{
     display: flex;
     justify-content: center;
@@ -34,6 +39,7 @@
 .loading{
     text-align: center;
     font-style: italic;
+    margin-top: 20px;
     padding: 10px;
 }
 .gif{
@@ -46,6 +52,7 @@
 }
 .post-card {
     margin-bottom: 20px;
+    margin-top: 10px;
     padding: 12px;
     background-color: lightgray;
     border-radius: 10px;
@@ -61,13 +68,14 @@
 .post-title{
     margin-top: 20px;
 }
-
 .loading{
     text-align: center;
     font-size: medium;
     margin-top: auto;
 }
-
+.createPost{
+    align-content: center;
+}
 body {
     background-color:brown; 
     font-family: Arial, sans-serif;

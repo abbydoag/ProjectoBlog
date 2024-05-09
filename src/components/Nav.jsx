@@ -10,13 +10,16 @@ const Nav = ({ loggedIn, token }) => {
     <nav className="navbar navbar-expand-lg bg-dark">
       <div className="container-fluid">
         <a className="navbar-brand">
-          <img src={Logo} alt="Logo" />
-        </a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
+            <img src={Logo} alt="Logo" />
+          </a>
+        <div className="nav-toggler">
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+        </div>        
+        <div className="navbar-collapse collapse" id="barNav">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            {/*ELEMENTOS DE BARRA*/}
             <li className="nav-item">
               <a className={page === "/" ? "nav-link active" : "nav-link"} onClick={() => navigate('/')} id="buttonNav">
                 <i className="fa-solid fa-house-chimney"></i> Home

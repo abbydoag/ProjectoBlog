@@ -5,7 +5,7 @@ function Input({label, type, value, onChange}) {
             <input
                 type={type}
                 className="form-control"
-                onChange={({target:{value}}) => onChange(value)}
+                onChange={onChange}
                 value={value || ''}
             />
         </div>
